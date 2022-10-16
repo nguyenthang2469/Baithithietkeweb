@@ -1,0 +1,23 @@
+.text-header {
+    color: var(--text-header-color);
+}
+
+.text-heading {
+    color: var(--heading-color);
+}
+
+.bg-btn {
+    background-color: var(--bg-color-btn);
+}
+
+.bg-btn-hover {
+    background-color: var(--bg-color-btn-hover);
+}
+
+.shadow-box {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.shadow-box-around {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
