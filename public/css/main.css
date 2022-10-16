@@ -21,3 +21,7 @@
 .shadow-box-around {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
 }
+
+.shadow-btn {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
