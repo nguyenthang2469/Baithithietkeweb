@@ -20,7 +20,7 @@
         <header id="header" class="min-h-[750px] pt-3 bg-[#E4E9F5]">
             <!-- day la thanh navbar -->
             <div class="fixed top-0 z-50 w-full bg-[#E4E9F5] drop-shadow-lg">
-                <div class="grid grid-cols-12 items-center max-w-[1280px] mx-auto select-none">
+                <div class=" grid grid-cols-12 items-center max-w-[1024px] xl:max-w-[1280px] mx-auto select-none">
                     <div class="col-start-1 col-end-3 text-xl font-bold">
                         <a href="#header" class="cursor-pointer">
                             <img class="inline-block w-20" src="./img/header/logo_ITC-removebg-preview 2.png" alt="Logo_ITC" />
@@ -64,115 +64,97 @@
                         <li class="relative group hover:text-blue-500">
                             <a href="#" class="">Khóa học
                                 <ul class="list-none bg-[#ffffff] text-header group absolute top-[100%] min-w-[180px] shadow-box hidden group-hover:block leading-6">
-                                    <li class="px-3 py-3 border-b-gray-200 border-b-[1px] font-medium hover:bg-slate-200 hover:font-bold">
-                                        C++
-                                    </li>
-                                    <li class="px-3 py-3 border-b-gray-200 border-b-[1px] font-medium hover:bg-slate-200 hover:font-bold">
-                                        C#
-                                    </li>
-                                    <li class="px-3 py-3 border-b-gray-200 border-b-[1px] font-medium hover:bg-slate-200 hover:font-bold">
-                                        Website
-                                    </li>
+                                    <li class="px-3 py-3 border-b-gray-200 border-b-[1px] font-medium hover:bg-slate-200 hover:font-bold">C++</li>
+                                    <li class="px-3 py-3 border-b-gray-200 border-b-[1px] font-medium hover:bg-slate-200 hover:font-bold">C#</li>
+                                    <li class="px-3 py-3 border-b-gray-200 border-b-[1px] font-medium hover:bg-slate-200 hover:font-bold">Website</li>
                                 </ul>
                             </a>
                         </li>
                         <li class="relative group hover:text-blue-500">
                             <a href="#" class="">Liên hệ
                                 <ul class="list-none bg-[#ffffff] text-header group absolute top-[100%] min-w-[180px] shadow-box hidden group-hover:block leading-6">
-                                    <li class="px-3 py-3 border-b-gray-200 border-b-[1px] font-medium hover:bg-slate-200 hover:font-bold">
-                                        Email
-                                    </li>
-                                    <li class="px-3 py-3 border-b-gray-200 border-b-[1px] font-medium hover:bg-slate-200 hover:font-bold">
-                                        Fanpage
-                                    </li>
-                                    <li class="px-3 py-3 border-b-gray-200 border-b-[1px] font-medium hover:bg-slate-200 hover:font-bold">
-                                        Hotline
-                                    </li>
+                                    <li class="px-3 py-3 border-b-gray-200 border-b-[1px] font-medium hover:bg-slate-200 hover:font-bold">Email</li>
+                                    <li class="px-3 py-3 border-b-gray-200 border-b-[1px] font-medium hover:bg-slate-200 hover:font-bold">Fanpage</li>
+                                    <li class="px-3 py-3 border-b-gray-200 border-b-[1px] font-medium hover:bg-slate-200 hover:font-bold">Hotline</li>
                                 </ul>
                             </a>
                         </li>
                     </ul>
                     <div class="grid grid-cols-2 col-start-11 col-end-13 items-center text-base text-header font-semibold">
                         <a href="./login.html" class="cursor-pointer hover:text-blue-500">Đăng nhập</a>
-                        <a href="register.html" class="text-center py-2 text-white w-full h-full bg-btn rounded-[5px] cursor-pointer hover:bg-[#2a5ef9]">Đăng
-                            ký</a>
+                        <a href="register.html" class="text-center py-2 text-white w-full h-full bg-btn rounded-[5px] cursor-pointer hover:bg-[#2a5ef9]">Đăng ký</a>
                     </div>
                 </div>
             </div>
-            <section id="banner">
-                <div class="max-w-[1280px] mx-auto flex flex-row pt-44 pb-24">
-                    <div class="w-[40%]">
-                        <p class="font-bold text-[43px]">
-                            Năng động hơn<br />Sáng tạo hơn<br />
-                            Mới mẻ hơn
-                        </p>
-                        <p class="pt-5 pb-8 max-w-[80%]">
-                            Hãy cùng tham gia câu lạc bộ để nâng cao kiến thức, kỹ năng của
-                            bản thân. Ngoài ra bạn có thể mở rộng các mối quan hệ và có
-                            những kỷ niệm khó phai dưới mái trường.
-                        </p>
-                        <button class="p-4 rounded-[4px] text-white bg-btn hover:bg-[#2a5ef9]" type="button">
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScc8O9WctKJaMTbZht0vpHz7EEuN2tisk7ljEnTTNtNmmjgQA/viewform">Tham gia ngay</a>
-                        </button>
-                    </div>
-                    <!-- day la slide -->
-                    <div class="w-[60%] swiper mySwiper rounded-md">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide flex flex-col">
-                                <div class="w-[95%] shadow-box rounded-md overflow-hidden">
-                                    <img class="" src="./img/header/Trian.jpg" alt="" />
-                                </div>
-                                <p class="pt-4 text-center text-xl italic font-light">
-                                    "Chương trình tri ân các anh hùng dân tộc"
-                                </p>
+            <section id="banner" class="max-w-[1024px] xl:max-w-[1280px] mx-auto flex flex-row pt-44 pb-24">
+                <div class="w-[40%]">
+                    <p class="font-bold text-[43px]">
+                        Năng động hơn<br />Sáng tạo hơn<br /> Mới mẻ hơn
+                    </p>
+                    <p class="pt-5 pb-8 max-w-[80%]">
+                        Hãy cùng tham gia câu lạc bộ để nâng cao kiến thức, kỹ năng của bản thân. Ngoài ra bạn có thể mở rộng các mối quan hệ và có những kỷ niệm khó phai dưới mái trường.
+                    </p>
+                    <button class="p-4 rounded-[4px] text-white bg-btn hover:bg-[#2a5ef9]" type="button">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScc8O9WctKJaMTbZht0vpHz7EEuN2tisk7ljEnTTNtNmmjgQA/viewform">Tham gia ngay</a>
+                    </button>
+                </div>
+                <!-- day la slide -->
+                <div class="w-[60%] swiper mySwiper rounded-md">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide flex flex-col">
+                            <div class="w-[95%] shadow-box rounded-md overflow-hidden">
+                                <img class="" src="./img/header/Trian.jpg" alt="" />
                             </div>
-                            <div class="swiper-slide flex flex-col">
-                                <div class="w-[95%] shadow-box rounded-md overflow-hidden">
-                                    <img class="" src="./img/header/tuyenthanhvienITC.jpg" alt="" />
-                                </div>
-                                <p class="pt-4 text-center text-xl italic font-light">
-                                    "Tuyển thành viên đội tình nguyện CLB Tin Học"
-                                </p>
+                            <p class="pt-4 text-center text-xl italic font-light">
+                                "Chương trình tri ân các anh hùng dân tộc"
+                            </p>
+                        </div>
+                        <div class="swiper-slide flex flex-col">
+                            <div class="w-[95%] shadow-box rounded-md overflow-hidden">
+                                <img class="" src="./img/header/tuyenthanhvienITC.jpg" alt="" />
                             </div>
-                            <div class="swiper-slide flex flex-col">
-                                <div class="w-[95%] shadow-box rounded-md overflow-hidden">
-                                    <img class="" src="./img/header/ITPLUS.jpg" alt="" />
-                                </div>
-                                <p class="pt-4 text-center text-xl italic font-light">
-                                    "ITPLUS đào tạo lớp PHOTOSHOP cho sinh viên"
-                                </p>
+                            <p class="pt-4 text-center text-xl italic font-light">
+                                "Tuyển thành viên đội tình nguyện CLB Tin Học"
+                            </p>
+                        </div>
+                        <div class="swiper-slide flex flex-col">
+                            <div class="w-[95%] shadow-box rounded-md overflow-hidden">
+                                <img class="" src="./img/header/ITPLUS.jpg" alt="" />
                             </div>
-                            <div class="swiper-slide flex flex-col">
-                                <div class="w-[95%] shadow-box rounded-md overflow-hidden">
-                                    <img class="" src="./img/header/Hotroseagame.jpg" alt="" />
-                                </div>
-                                <p class="pt-4 text-center text-xl italic font-light">
-                                    "Hỗ trợ SEAGAME 2021"
-                                </p>
+                            <p class="pt-4 text-center text-xl italic font-light">
+                                "ITPLUS đào tạo lớp PHOTOSHOP cho sinh viên"
+                            </p>
+                        </div>
+                        <div class="swiper-slide flex flex-col">
+                            <div class="w-[95%] shadow-box rounded-md overflow-hidden">
+                                <img class="" src="./img/header/Hotroseagame.jpg" alt="" />
                             </div>
-                            <div class="swiper-slide flex flex-col">
-                                <div class="w-[95%] shadow-box rounded-md overflow-hidden">
-                                    <img class="" src="./img/header/Tranhtuongbichhoa.jpg" alt="" />
-                                </div>
-                                <p class="pt-4 text-center text-xl italic font-light">
-                                    "Tranh tường bích họa"
-                                </p>
+                            <p class="pt-4 text-center text-xl italic font-light">
+                                "Hỗ trợ SEAGAME 2021"
+                            </p>
+                        </div>
+                        <div class="swiper-slide flex flex-col">
+                            <div class="w-[95%] shadow-box rounded-md overflow-hidden">
+                                <img class="" src="./img/header/Tranhtuongbichhoa.jpg" alt="" />
                             </div>
-                            <div class="swiper-slide flex flex-col">
-                                <div class="w-[95%] shadow-box rounded-md overflow-hidden">
-                                    <img class="" src="./img/header/Chaotansinhvien.jpg" alt="" />
-                                </div>
-                                <p class="pt-4 text-center text-xl italic font-light">
-                                    "Chào tân sinh viên K15"
-                                </p>
+                            <p class="pt-4 text-center text-xl italic font-light">
+                                "Tranh tường bích họa"
+                            </p>
+                        </div>
+                        <div class="swiper-slide flex flex-col">
+                            <div class="w-[95%] shadow-box rounded-md overflow-hidden">
+                                <img class="" src="./img/header/Chaotansinhvien.jpg" alt="" />
                             </div>
+                            <p class="pt-4 text-center text-xl italic font-light">
+                                "Chào tân sinh viên K15"
+                            </p>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- day la logo banner  -->
             <section id="logo-banner" class="bg-white">
-                <div class="flex max-w-[1280px] mx-auto py-4">
+                <div class="flex max-w-[1024px] xl:max-w-[1280px] mx-auto">
                     <div class="basis-2/4 flex items-center text-center">
                         <img class="w-36" src="./img/header/Logo_Khoa_CNTT-removebg-preview 2.png" alt="Logo faculty of IT" />
                         <p class="text-header font-bold text-2xl w-[230px]">
@@ -180,10 +162,8 @@
                         </p>
                     </div>
                     <div class="basis-2/4 flex items-center">
-                        <img class="w-36" src="./img/header/logo_Uneti-removebg-preview 2.png" alt="Logo UNETI" />
-                        <p class="text-header text-center font-bold text-2xl w-[400px]">
-                            Trường Đại học Kinh tế - Kỹ thuật Công Nghiệp
-                        </p>
+                        <img class="w-36" src="./img/header/logo_Uneti-removebg-preview 2.png" alt="Logo UNETI">
+                        <p class="text-header text-center font-bold text-2xl w-[400px]">Trường Đại học Kinh tế - Kỹ thuật Công Nghiệp</p>
                     </div>
                 </div>
             </section>
@@ -192,9 +172,7 @@
             <div class=" max-w-[1280px] m-auto pt-11 pb-24 flex flex-col justify-center items-center">
                 <span class="text-5xl font-bold">Hoạt động</span>
                 <ul class="text-lg font-bold list-none flex flex-row w-[40%] justify-between text-[#575859] pt-11 pb-16">
-                    <li class="slide-nav-1 slide-nav- cursor-pointer">
-                        Đoàn thanh niên
-                    </li>
+                    <li class="slide-nav-1 slide-nav- cursor-pointer">Đoàn thanh niên</li>
                     <li class="slide-nav-2 cursor-pointer">Học tập</li>
                     <li class="slide-nav-3 cursor-pointer">Cuộc thi</li>
                 </ul>
@@ -447,117 +425,72 @@
                         <div class="book-content hidden active">
                             <p class="text-[40px] font-bold pb-20">Tên cuốn sách đó 1</p>
                             <p class="text-sm font-normal text-[#8C8E90] pb-9 max-w-[400px]">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Consequuntur quam repellat dolor laudantium veniam, unde
-                                suscipit quia ipsam enim officiis nisi delectus adipisci
-                                doloremque fuga aperiam praesentium exercitationem neque
-                                doloribus.Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit. Consequuntur quam repellat dolor laudantium veniam, unde
-                                suscipit quia ipsam enim officiis
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis nisi delectus adipisci doloremque fuga aperiam praesentium exercitationem neque doloribus.Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis
                             </p>
                             <a class="text-[#416FF4] cursor-pointer border-b-[1px] border-[#416FF4] pb-[10px]">Learn More</a>
                         </div>
                         <div class="book-content hidden ">
                             <p class="text-[40px] font-bold pb-20">Tên cuốn sách đó 2</p>
                             <p class="text-sm font-normal text-[#8C8E90] pb-9 max-w-[400px]">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Consequuntur quam repellat dolor laudantium veniam, unde
-                                suscipit quia ipsam enim officiis nisi delectus adipisci
-                                doloremque fuga aperiam praesentium exercitationem neque
-                                doloribus.Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit. Consequuntur quam repellat dolor laudantium veniam, unde
-                                suscipit quia ipsam enim officiis
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis nisi delectus adipisci doloremque fuga aperiam praesentium exercitationem neque doloribus.Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis
                             </p>
                             <a class="text-[#416FF4] cursor-pointer border-b-[1px] border-[#416FF4] pb-[10px]">Learn More</a>
                         </div>
                         <div class="book-content hidden ">
                             <p class="text-[40px] font-bold pb-20">Tên cuốn sách đó 3</p>
                             <p class="text-sm font-normal text-[#8C8E90] pb-9 max-w-[400px]">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Consequuntur quam repellat dolor laudantium veniam, unde
-                                suscipit quia ipsam enim officiis nisi delectus adipisci
-                                doloremque fuga aperiam praesentium exercitationem neque
-                                doloribus.Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit. Consequuntur quam repellat dolor laudantium veniam, unde
-                                suscipit quia ipsam enim officiis
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis nisi delectus adipisci doloremque fuga aperiam praesentium exercitationem neque doloribus.Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis
                             </p>
                             <a class="text-[#416FF4] cursor-pointer border-b-[1px] border-[#416FF4] pb-[10px]">Learn More</a>
                         </div>
                         <div class="book-content hidden ">
                             <p class="text-[40px] font-bold pb-20">Tên cuốn sách đó 4</p>
                             <p class="text-sm font-normal text-[#8C8E90] pb-9 max-w-[400px]">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Consequuntur quam repellat dolor laudantium veniam, unde
-                                suscipit quia ipsam enim officiis nisi delectus adipisci
-                                doloremque fuga aperiam praesentium exercitationem neque
-                                doloribus.Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit. Consequuntur quam repellat dolor laudantium veniam, unde
-                                suscipit quia ipsam enim officiis
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis nisi delectus adipisci doloremque fuga aperiam praesentium exercitationem neque doloribus.Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis
                             </p>
                             <a class="text-[#416FF4] cursor-pointer border-b-[1px] border-[#416FF4] pb-[10px]">Learn More</a>
                         </div>
                         <div class="book-content hidden ">
                             <p class="text-[40px] font-bold pb-20">Tên cuốn sách đó 5</p>
                             <p class="text-sm font-normal text-[#8C8E90] pb-9 max-w-[400px]">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Consequuntur quam repellat dolor laudantium veniam, unde
-                                suscipit quia ipsam enim officiis nisi delectus adipisci
-                                doloremque fuga aperiam praesentium exercitationem neque
-                                doloribus.Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit. Consequuntur quam repellat dolor laudantium veniam, unde
-                                suscipit quia ipsam enim officiis
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis nisi delectus adipisci doloremque fuga aperiam praesentium exercitationem neque doloribus.Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis
                             </p>
                             <a class="text-[#416FF4] cursor-pointer border-b-[1px] border-[#416FF4] pb-[10px]">Learn More</a>
                         </div>
                         <div class="book-content hidden ">
                             <p class="text-[40px] font-bold pb-20">Tên cuốn sách đó 6</p>
                             <p class="text-sm font-normal text-[#8C8E90] pb-9 max-w-[400px]">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Consequuntur quam repellat dolor laudantium veniam, unde
-                                suscipit quia ipsam enim officiis nisi delectus adipisci
-                                doloremque fuga aperiam praesentium exercitationem neque
-                                doloribus.Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit. Consequuntur quam repellat dolor laudantium veniam, unde
-                                suscipit quia ipsam enim officiis
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis nisi delectus adipisci doloremque fuga aperiam praesentium exercitationem neque doloribus.Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis
                             </p>
                             <a class="text-[#416FF4] cursor-pointer border-b-[1px] border-[#416FF4] pb-[10px]">Learn More</a>
                         </div>
                         <div class="book-content hidden ">
                             <p class="text-[40px] font-bold pb-20">Tên cuốn sách đó 7</p>
                             <p class="text-sm font-normal text-[#8C8E90] pb-9 max-w-[400px]">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Consequuntur quam repellat dolor laudantium veniam, unde
-                                suscipit quia ipsam enim officiis nisi delectus adipisci
-                                doloremque fuga aperiam praesentium exercitationem neque
-                                doloribus.Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit. Consequuntur quam repellat dolor laudantium veniam, unde
-                                suscipit quia ipsam enim officiis
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis nisi delectus adipisci doloremque fuga aperiam praesentium exercitationem neque doloribus.Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis
                             </p>
                             <a class="text-[#416FF4] cursor-pointer border-b-[1px] border-[#416FF4] pb-[10px]">Learn More</a>
                         </div>
                         <div class="book-content hidden ">
                             <p class="text-[40px] font-bold pb-20">Tên cuốn sách đó 8</p>
                             <p class="text-sm font-normal text-[#8C8E90] pb-9 max-w-[400px]">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Consequuntur quam repellat dolor laudantium veniam, unde
-                                suscipit quia ipsam enim officiis nisi delectus adipisci
-                                doloremque fuga aperiam praesentium exercitationem neque
-                                doloribus.Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit. Consequuntur quam repellat dolor laudantium veniam, unde
-                                suscipit quia ipsam enim officiis
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis nisi delectus adipisci doloremque fuga aperiam praesentium exercitationem neque doloribus.Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis
                             </p>
                             <a class="text-[#416FF4] cursor-pointer border-b-[1px] border-[#416FF4] pb-[10px]">Learn More</a>
                         </div>
                         <div class="book-content hidden ">
                             <p class="text-[40px] font-bold pb-20">Tên cuốn sách đó 9</p>
                             <p class="text-sm font-normal text-[#8C8E90] pb-9 max-w-[400px]">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Consequuntur quam repellat dolor laudantium veniam, unde
-                                suscipit quia ipsam enim officiis nisi delectus adipisci
-                                doloremque fuga aperiam praesentium exercitationem neque
-                                doloribus.Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit. Consequuntur quam repellat dolor laudantium veniam, unde
-                                suscipit quia ipsam enim officiis
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis nisi delectus adipisci doloremque fuga aperiam praesentium exercitationem neque doloribus.Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis
                             </p>
                             <a class="text-[#416FF4] cursor-pointer border-b-[1px] border-[#416FF4] pb-[10px]">Learn More</a>
                         </div>
