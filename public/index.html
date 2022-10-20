@@ -19,7 +19,7 @@
     <div id="main">
         <header id="header" class="min-h-[750px] pt-3 bg-[#E4E9F5]">
             <!-- day la thanh navbar -->
-            <div class="fixed top-0 z-50 w-full bg-[#E4E9F5] drop-shadow-lg">
+            <div class="fixed top-0 z-50 w-full bg-[#E4E9F5] drop-shadow-lg select-none">
                 <div class=" grid grid-cols-12 items-center max-w-[1024px] xl:max-w-[1280px] mx-auto select-none">
                     <div class="col-start-1 col-end-3 text-xl font-bold">
                         <a href="#header" class="cursor-pointer">
@@ -32,7 +32,7 @@
                             <a href="#" class="">Trang chủ</a>
                         </li>
                         <li class="relative group hover:text-blue-500">
-                            <a href="#" class="">Hoạt động
+                            <div class="">Hoạt động
                                 <ul class="list-none bg-[#ffffff] text-header group absolute top-[100%] min-w-[180px] shadow-box hidden group-hover:block leading-6">
                                     <li class="px-3 py-3 border-b-gray-200 border-b-[1px] font-medium hover:bg-slate-200 hover:font-bold">Văn hóa</li>
                                     <li class="px-3 py-3 border-b-gray-200 border-b-[1px] font-medium hover:bg-slate-200 hover:font-bold">Văn nghệ</li>
@@ -43,25 +43,25 @@
                                     <li class="px-3 py-3 border-b-gray-200 border-b-[1px] font-medium hover:bg-slate-200 hover:font-bold">Chào mừng</li>
                                     <li class="px-3 py-3 border-b-gray-200 border-b-[1px] font-medium hover:bg-slate-200 hover:font-bold">Chào hè</li>
                                 </ul>
-                            </a>
+                            </div>
                         </li>
                         <li class="relative group hover:text-blue-500">
-                            <a href="#" class="">Khóa học
+                            <div class="">Khóa học
                                 <ul class="list-none bg-[#ffffff] text-header group absolute top-[100%] min-w-[180px] shadow-box hidden group-hover:block leading-6">
                                     <li class="px-3 py-3 border-b-gray-200 border-b-[1px] font-medium hover:bg-slate-200 hover:font-bold">C++</li>
                                     <li class="px-3 py-3 border-b-gray-200 border-b-[1px] font-medium hover:bg-slate-200 hover:font-bold">C#</li>
                                     <li class="px-3 py-3 border-b-gray-200 border-b-[1px] font-medium hover:bg-slate-200 hover:font-bold">Website</li>
                                 </ul>
-                            </a>
+                            </div>
                         </li>
                         <li class="relative group hover:text-blue-500">
-                            <a href="#" class="">Liên hệ
+                            <div class="">Liên hệ
                                 <ul class="list-none bg-[#ffffff] text-header group absolute top-[100%] min-w-[180px] shadow-box hidden group-hover:block leading-6">
                                     <li class="px-3 py-3 border-b-gray-200 border-b-[1px] font-medium hover:bg-slate-200 hover:font-bold">Email</li>
                                     <li class="px-3 py-3 border-b-gray-200 border-b-[1px] font-medium hover:bg-slate-200 hover:font-bold">Fanpage</li>
                                     <li class="px-3 py-3 border-b-gray-200 border-b-[1px] font-medium hover:bg-slate-200 hover:font-bold">Hotline</li>
                                 </ul>
-                            </a>
+                            </div>
                         </li>
                     </ul>
                     <div class="grid grid-cols-2 col-start-11 col-end-13 items-center text-base text-header font-semibold">
@@ -75,63 +75,49 @@
                     <p class="font-bold text-[43px]">
                         Năng động hơn<br />Sáng tạo hơn<br /> Mới mẻ hơn
                     </p>
-                    <p class="pt-5 pb-8 max-w-[80%]">
-                        Hãy cùng tham gia câu lạc bộ để nâng cao kiến thức, kỹ năng của bản thân. Ngoài ra bạn có thể mở rộng các mối quan hệ và có những kỷ niệm khó phai dưới mái trường.
-                    </p>
+                    <p class="pt-5 pb-8 max-w-[80%]">Hãy cùng tham gia câu lạc bộ để nâng cao kiến thức, kỹ năng của bản thân. Ngoài ra bạn có thể mở rộng các mối quan hệ và có những kỷ niệm khó phai dưới mái trường.</p>
                     <button class="p-4 rounded-[4px] text-white bg-btn hover:bg-[#2a5ef9]" type="button">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScc8O9WctKJaMTbZht0vpHz7EEuN2tisk7ljEnTTNtNmmjgQA/viewform">Tham gia ngay</a>
+                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScc8O9WctKJaMTbZht0vpHz7EEuN2tisk7ljEnTTNtNmmjgQA/viewform">Tham gia ngay</a>
                     </button>
                 </div>
                 <!-- day la slide -->
-                <div class="w-[60%] swiper mySwiper rounded-md">
+                <div class="w-[60%] swiper mySwiper rounded-md cursor-grab">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide flex flex-col">
                             <div class="w-[95%] shadow-box rounded-md overflow-hidden">
-                                <img class="" src="./img/header/Trian.jpg" alt="" />
+                                <img class="banner-slide-img" src="./img/header/Trian.jpg" alt="" />
                             </div>
-                            <p class="pt-4 text-center text-xl italic font-light">
-                                "Chương trình tri ân các anh hùng dân tộc"
-                            </p>
+                            <p class="pt-4 text-center text-xl italic font-light">"Chương trình tri ân các anh hùng dân tộc"</p>
                         </div>
                         <div class="swiper-slide flex flex-col">
                             <div class="w-[95%] shadow-box rounded-md overflow-hidden">
-                                <img class="" src="./img/header/tuyenthanhvienITC.jpg" alt="" />
+                                <img class="banner-slide-img" src="./img/header/tuyenthanhvienITC.jpg" alt="" />
                             </div>
-                            <p class="pt-4 text-center text-xl italic font-light">
-                                "Tuyển thành viên đội tình nguyện CLB Tin Học"
-                            </p>
+                            <p class="pt-4 text-center text-xl italic font-light">"Tuyển thành viên đội tình nguyện CLB Tin Học"</p>
                         </div>
                         <div class="swiper-slide flex flex-col">
                             <div class="w-[95%] shadow-box rounded-md overflow-hidden">
-                                <img class="" src="./img/header/ITPLUS.jpg" alt="" />
+                                <img class="banner-slide-img" src="./img/header/ITPLUS.jpg" alt="" />
                             </div>
-                            <p class="pt-4 text-center text-xl italic font-light">
-                                "ITPLUS đào tạo lớp PHOTOSHOP cho sinh viên"
-                            </p>
+                            <p class="pt-4 text-center text-xl italic font-light">"ITPLUS đào tạo lớp PHOTOSHOP cho sinh viên"</p>
                         </div>
                         <div class="swiper-slide flex flex-col">
                             <div class="w-[95%] shadow-box rounded-md overflow-hidden">
-                                <img class="" src="./img/header/Hotroseagame.jpg" alt="" />
+                                <img class="banner-slide-img" src="./img/header/Hotroseagame.jpg" alt="" />
                             </div>
-                            <p class="pt-4 text-center text-xl italic font-light">
-                                "Hỗ trợ SEAGAME 2021"
-                            </p>
+                            <p class="pt-4 text-center text-xl italic font-light">"Hỗ trợ SEAGAME 2021"</p>
                         </div>
                         <div class="swiper-slide flex flex-col">
                             <div class="w-[95%] shadow-box rounded-md overflow-hidden">
-                                <img class="" src="./img/header/Tranhtuongbichhoa.jpg" alt="" />
+                                <img class="banner-slide-img" src="./img/header/Tranhtuongbichhoa.jpg" alt="" />
                             </div>
-                            <p class="pt-4 text-center text-xl italic font-light">
-                                "Tranh tường bích họa"
-                            </p>
+                            <p class="pt-4 text-center text-xl italic font-light">"Tranh tường bích họa"</p>
                         </div>
                         <div class="swiper-slide flex flex-col">
                             <div class="w-[95%] shadow-box rounded-md overflow-hidden">
-                                <img class="" src="./img/header/Chaotansinhvien.jpg" alt="" />
+                                <img class="banner-slide-img" src="./img/header/Chaotansinhvien.jpg" alt="" />
                             </div>
-                            <p class="pt-4 text-center text-xl italic font-light">
-                                "Chào tân sinh viên K15"
-                            </p>
+                            <p class="pt-4 text-center text-xl italic font-light">"Chào tân sinh viên K15"</p>
                         </div>
                     </div>
                 </div>
@@ -141,9 +127,7 @@
                 <div class="flex max-w-[1024px] xl:max-w-[1280px] mx-auto">
                     <div class="basis-2/4 flex items-center text-center">
                         <img class="w-36" src="./img/header/Logo_Khoa_CNTT-removebg-preview 2.png" alt="Logo faculty of IT" />
-                        <p class="text-header font-bold text-2xl w-[230px]">
-                            Khoa Công Nghệ Thông Tin
-                        </p>
+                        <p class="text-header font-bold text-2xl w-[230px]">Khoa Công Nghệ Thông Tin</p>
                     </div>
                     <div class="basis-2/4 flex items-center">
                         <img class="w-36" src="./img/header/logo_Uneti-removebg-preview 2.png" alt="Logo UNETI">
@@ -212,9 +196,7 @@
                         <div class="bg-white rounded-lg overflow-hidden">
                             <img class="w-full h-1/2" src="./img/course/cconcong.jpg" alt="" />
                             <div class="w-[80%] m-auto py-5">
-                                <p class="text-xl font-semibold pb-7">
-                                    Khóa học lập trình c++
-                                </p>
+                                <p class="text-xl font-semibold pb-7">Khóa học lập trình c++</p>
                                 <div class="pb-2">
                                     <img class="w-[20px] h-[20px] inline-block" src="./img/content/icons8-play-button-circled-48.png" alt="" />
                                     <span class="text-sm">08/10/2020</span>
@@ -254,8 +236,7 @@
                                 <hr class="pb-4 border-[#268EAA]" />
                                 <div>
                                     <img class="w-12 h-12 inline-block" src="./img/course/Picture2.jpg" alt="" />
-                                    <span class="text-sm font-bold pl-2">TS. Lê Thị Thu Hiền
-                                    </span>
+                                    <span class="text-sm font-bold pl-2">TS. Lê Thị Thu Hiền</span>
                                 </div>
                             </div>
                         </div>
@@ -271,7 +252,7 @@
                                 <hr class="pb-4 border-[#268EAA]" />
                                 <div>
                                     <img class="w-12 h-12 inline-block" src="./img/course/Picture1.png" alt="" />
-                                    <span class="text-sm font-bold pl-2">TS. Bùi Văn Tân </span>
+                                    <span class="text-sm font-bold pl-2">TS. Bùi Văn Tân</span>
                                 </div>
                             </div>
                         </div>
@@ -287,8 +268,7 @@
                                 <hr class="pb-4 border-[#268EAA]" />
                                 <div>
                                     <img class="w-12 h-12 inline-block" src="./img/course/Picture2.jpg" alt="" />
-                                    <span class="text-sm font-bold pl-2">TS. Lê Thị Thu Hiền
-                                    </span>
+                                    <span class="text-sm font-bold pl-2">TS. Lê Thị Thu Hiền</span>
                                 </div>
                             </div>
                         </div>
@@ -296,9 +276,7 @@
                         <div class="bg-white rounded-lg overflow-hidden">
                             <img class="w-full h-1/2" src="./img/course/th (1).jfif" alt="" />
                             <div class="w-[80%] m-auto py-5">
-                                <p class="text-xl font-semibold pb-7">
-                                    Khóa học lập trình .NET
-                                </p>
+                                <p class="text-xl font-semibold pb-7">Khóa học lập trình .NET</p>
                                 <div class="pb-2">
                                     <img class="w-[20px] h-[20px] inline-block" src="./img/content/icons8-play-button-circled-48.png" alt="" />
                                     <span class="text-sm">08/10/2020</span>
@@ -306,7 +284,7 @@
                                 <hr class="pb-4 border-[#268EAA]" />
                                 <div>
                                     <img class="w-12 h-12 inline-block" src="./img/course/Picture1.png" alt="" />
-                                    <span class="text-sm font-bold pl-2">TS. Bùi Văn Tân </span>
+                                    <span class="text-sm font-bold pl-2">TS. Bùi Văn Tân</span>
                                 </div>
                             </div>
                         </div>
@@ -330,9 +308,7 @@
                         <div class="bg-white rounded-lg overflow-hidden">
                             <img class="w-full h-1/2" src="./img/course/cconcong.jpg" alt="" />
                             <div class="w-[80%] m-auto py-5">
-                                <p class="text-xl font-semibold pb-7">
-                                    Khóa học lập trình c++
-                                </p>
+                                <p class="text-xl font-semibold pb-7">Khóa học lập trình c++</p>
                                 <div class="pb-2">
                                     <img class="w-[20px] h-[20px] inline-block" src="./img/content/icons8-play-button-circled-48.png" alt="" />
                                     <span class="text-sm">08/10/2020</span>
@@ -340,7 +316,7 @@
                                 <hr class="pb-4 border-[#268EAA]" />
                                 <div>
                                     <img class="w-12 h-12 inline-block" src="./img/course/Picture1.png" alt="" />
-                                    <span class="text-sm font-bold pl-2">TS. Bùi Văn Tân </span>
+                                    <span class="text-sm font-bold pl-2">TS. Bùi Văn Tân</span>
                                 </div>
                             </div>
                         </div>
@@ -356,16 +332,13 @@
                                 <hr class="pb-4 border-[#268EAA]" />
                                 <div>
                                     <img class="w-12 h-12 inline-block" src="./img/course/Picture2.jpg" alt="" />
-                                    <span class="text-sm font-bold pl-2">TS. Lê Thị Thu Hiền
-                                    </span>
+                                    <span class="text-sm font-bold pl-2">TS. Lê Thị Thu Hiền</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button class="show-all p-4 mt-10 mb-12 rounded-[4px] text-white bg-btn hover:bg-[#2a5ef9] w-[12%]" type="button">
-                    Xem tất cả
-                </button>
+                <button class="show-all p-4 mt-10 mb-12 rounded-[4px] text-white bg-btn hover:bg-[#2a5ef9] w-[12%]" type="button">Xem tất cả</button>
             </div>
             <div id="book" class="w-[925px] m-auto">
                 <p class="text-center text-4xl font-bold pt-[75px] pb-16">
@@ -399,84 +372,126 @@
                                 <div class="swiper-slide border-left-rounded book-swiper-slide">
                                     <img src="./img/book/tải xuống.jfif" alt="" />
                                 </div>
-                                <div class="swiper-slide border-left-rounded book-swiper-slide">
-                                    <img src="./img/book/cpp_avatar.jpg" alt="" />
-                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="w-1/2 pt-11 pb-[120px] ml-10">
                         <div class="book-content hidden active">
-                            <p class="text-[40px] font-bold pb-20">Tên cuốn sách đó 1</p>
-                            <p class="text-sm font-normal text-[#8C8E90] pb-9 max-w-[400px]">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis nisi delectus adipisci doloremque fuga aperiam praesentium exercitationem neque doloribus.Lorem ipsum
-                                dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis
+                            <p class="text-[40px] font-bold pb-20">C++ Programming</p>
+                            <p class="text-sm font-normal text-[#8C8E90] pb-9 max-w-[400px]">Bạn đang chuẩn bị bước chân vào lĩnh vực CNTT. Đứng trước vô vàn sự lựa chọn về ngôn ngữ lập trình cần học. Có những ngôn ngữ tuy rất cơ bản dễ học nhưng nó lại là một ngôn ngữ khá cũ. Cũng có những ngôn ngữ mới được phát triển,
+                                hệ bậc cao, rất tối ưu nhưng không phải ai cũng học được. Hôm nay CodeGym sẽ giới thiệu đến bạn ngôn ngữ lập trình C++ cùng với tài liệu học tập, bộ giáo trình kỹ thuật C++ vô cùng hữu ích
                             </p>
-                            <a class="text-[#416FF4] cursor-pointer border-b-[1px] border-[#416FF4] pb-[10px]">Learn More</a>
+                            <a target="_blank" href="https://www.programiz.com/cpp-programming" class="text-[#416FF4] cursor-pointer border-b-[1px] border-[#416FF4] pb-[10px]">Tìm hiểu thêm</a>
                         </div>
                         <div class="book-content hidden ">
-                            <p class="text-[40px] font-bold pb-20">Tên cuốn sách đó 2</p>
+                            <p class="text-[40px] font-bold pb-20">Giáo trình Javascipt cơ bản</p>
                             <p class="text-sm font-normal text-[#8C8E90] pb-9 max-w-[400px]">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis nisi delectus adipisci doloremque fuga aperiam praesentium exercitationem neque doloribus.Lorem ipsum
-                                dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis
+                                Javascript là một ngôn ngữ thông dịch (interpreter), chương trình nguồn của nó được nhúng (embedded) hoặc tích hợp (integated) vào tập tin HTML chuẩn. Qua bộ giáo trình Javascript căn bản này, bạn sẽ học được những kiến thức tổng quan, cách sử dụng, cách
+                                nhúng js vào html,… Cực kì bổ ích cho các bạn mới làm quen với lập trình web.
                             </p>
-                            <a class="text-[#416FF4] cursor-pointer border-b-[1px] border-[#416FF4] pb-[10px]">Learn More</a>
+                            <a target="_blank" href="https://cuongquach.com/giao-trinh-javascript-tieng-viet-co-ban-pdf.html" class="text-[#416FF4] cursor-pointer border-b-[1px] border-[#416FF4] pb-[10px]">Tìm hiểu thêm</a>
                         </div>
                         <div class="book-content hidden ">
-                            <p class="text-[40px] font-bold pb-20">Tên cuốn sách đó 3</p>
+                            <p class="text-[40px] font-bold pb-20">Tớ học lập trình Scratch</p>
                             <p class="text-sm font-normal text-[#8C8E90] pb-9 max-w-[400px]">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis nisi delectus adipisci doloremque fuga aperiam praesentium exercitationem neque doloribus.Lorem ipsum
-                                dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis
+                                Cẩm nang hướng dẫn hoàn chỉnh và đơn giản nhất dành cho bạn trẻ bắt đầu học lập trình. Ngôn ngữ lập trình Scratch đặc biệt phù hợp cho bạn trẻ mới học, vì tính tương tác trực quan, đồ họa sống động, ra sản phẩm liền tay mà vẫn đảm bảo khoa học và liên
+                                thông tri thức sau này. Chỉ cần nắm và kéo các khối lệnh đầy màu sắc có sẵn để lắp ghép thành một kịch bản điều khiển các đối tượng trên màn hình. Không có những dòng lệnh logic khô cứng và dễ lỗi, những khái niệm kỹ thuật
+                                khó hiểu, những quy tắc luật lệ chằng chịt và mệt mỏi trong các ngôn ngữ lập trình kiểu người lớn.
                             </p>
-                            <a class="text-[#416FF4] cursor-pointer border-b-[1px] border-[#416FF4] pb-[10px]">Learn More</a>
+                            <a target="_blank" href="https://www.fahasa.com/to-hoc-lap-trinh-lam-quen-voi-lap-trinh-scratch-tai-ban-2018.html" class="text-[#416FF4] cursor-pointer border-b-[1px] border-[#416FF4] pb-[10px]">Tìm hiểu thêm</a>
                         </div>
                         <div class="book-content hidden ">
-                            <p class="text-[40px] font-bold pb-20">Tên cuốn sách đó 4</p>
+                            <p class="text-[40px] font-bold pb-20">Tớ học lập trình PYTHON</p>
                             <p class="text-sm font-normal text-[#8C8E90] pb-9 max-w-[400px]">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis nisi delectus adipisci doloremque fuga aperiam praesentium exercitationem neque doloribus.Lorem ipsum
-                                dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis
+                                Sách hướng dẫn lập trình cho các bạn mới học cách dùng ngôn ngữ máy tính Python. Chỉ dẫn từng bước để bạn biết cách lập trình, tạo trò chơi, vẽ và làm đủ trò hay ho với Python. Chú giải các thuật ngữ máy tính đầy đủ và rõ ràng ở cuối sách. Thật nhiều
+                                trang web hữu ích để bạn tìm hiểu thêm trên mạng và tải về các mã lệnh cần thiết.
                             </p>
-                            <a class="text-[#416FF4] cursor-pointer border-b-[1px] border-[#416FF4] pb-[10px]">Learn More</a>
+                            <a target="_blank" href="https://tiki.vn/combo-sach-to-hoc-lap-trinh-lam-quen-voi-lap-trinh-to-hoc-lap-trinh-lam-quen-voi-python-p73165401.html" class="text-[#416FF4] cursor-pointer border-b-[1px] border-[#416FF4] pb-[10px]">Tìm hiểu thêm</a>
                         </div>
                         <div class="book-content hidden ">
-                            <p class="text-[40px] font-bold pb-20">Tên cuốn sách đó 5</p>
+                            <p class="text-[40px] font-bold pb-20">Tự học lập trình web PHP</p>
                             <p class="text-sm font-normal text-[#8C8E90] pb-9 max-w-[400px]">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis nisi delectus adipisci doloremque fuga aperiam praesentium exercitationem neque doloribus.Lorem ipsum
-                                dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis
+                                PHP là một trong những ngôn ngữ lập trình web phổ biến nhất và khá là dễ học. Điều này chắc chắn bạn cũng biết.Thế nên bạn và rất nhiều người đang tìm cách học lập trình PHP để cuối cùng hi vọng trở thành PHP Web DEV (hoặc chỉ đơn giản là học để thi tốt
+                                hơn ở trên trường). Dù cho là lý do gì, mình nghĩ rằng một hướng dẫn tự học lập trình php cơ bản, đầy đủ, rõ ràng, dễ hiểu ở đây sẽ giúp ích cho bạn khi mới bắt đầu.
                             </p>
-                            <a class="text-[#416FF4] cursor-pointer border-b-[1px] border-[#416FF4] pb-[10px]">Learn More</a>
+                            <a target="_blank" href="https://tuhocict.com/huong-dan-tu-hoc-lap-trinh-php/" class="text-[#416FF4] cursor-pointer border-b-[1px] border-[#416FF4] pb-[10px]">Tìm hiểu thêm</a>
                         </div>
                         <div class="book-content hidden ">
-                            <p class="text-[40px] font-bold pb-20">Tên cuốn sách đó 6</p>
+                            <p class="text-[40px] font-bold pb-20">Lập trình và cuộc sống</p>
                             <p class="text-sm font-normal text-[#8C8E90] pb-9 max-w-[400px]">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis nisi delectus adipisci doloremque fuga aperiam praesentium exercitationem neque doloribus.Lorem ipsum
-                                dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis
+                                Jeff Atwood bắt đầu viết blog Coding Horror vào năm 2004, ghi lại nghiên cứu của mình bằng một bài đăng trên blog mà anh có thể dễ dàng tìm lại và tham khải sau này. Nội dung blog không tập trung quá nhiều vào mặt kỹ thuật mà thiên về khía cạnh con người
+                                trong phát triển phần mềm. Bởi vậy mình nghĩ blog Coding Horror là một trong những blog tiêu biểu để các lập trình viên trẻ có thể học hỏi kinh nghiệm về những vấn đề trong phát triển phần mềm của những người đi trước.
                             </p>
-                            <a class="text-[#416FF4] cursor-pointer border-b-[1px] border-[#416FF4] pb-[10px]">Learn More</a>
+                            <a target="_blank" href="https://taisach.org/tai-ebook-lap-trinh-va-cuoc-song-tai-ban-2018-pdf/" class="text-[#416FF4] cursor-pointer border-b-[1px] border-[#416FF4] pb-[10px]">Tìm hiểu thêm</a>
                         </div>
                         <div class="book-content hidden ">
-                            <p class="text-[40px] font-bold pb-20">Tên cuốn sách đó 7</p>
+                            <p class="text-[40px] font-bold pb-20">Clean code</p>
                             <p class="text-sm font-normal text-[#8C8E90] pb-9 max-w-[400px]">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis nisi delectus adipisci doloremque fuga aperiam praesentium exercitationem neque doloribus.Lorem ipsum
-                                dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis
+                                Clean code nếu dịch ra thì có nghĩa là “mã nguồn sạch”, nhưng hiểu một cách đơn giản thì clean code bao gồm: cách tổ chức mã nguồn, cách triển khai mã nguồn sao cho khoa học, dễ hiểu và đem lại hiệu năng cao cho chương trình. Việc áp dụng clean code không
+                                khó, nhưng áp dụng làm sao cho đúng và chuẩn thì lại là một câu chuyện khác. Chính vì vậy mà việc nắm được, hiểu và biết cách áp dụng clean code sẽ khiến cho mã nguồn tốt hơn rất nhiều.
                             </p>
-                            <a class="text-[#416FF4] cursor-pointer border-b-[1px] border-[#416FF4] pb-[10px]">Learn More</a>
+                            <a target="_blank" href="https://topdev.vn/blog/clean-code-la-gi-tai-sao-phai-clean-code-trong-lap-trinh/" class="text-[#416FF4] cursor-pointer border-b-[1px] border-[#416FF4] pb-[10px]">Tìm hiểu thêm</a>
                         </div>
                         <div class="book-content hidden ">
-                            <p class="text-[40px] font-bold pb-20">Tên cuốn sách đó 8</p>
+                            <p class="text-[40px] font-bold pb-20">C# and .NET Framework</p>
                             <p class="text-sm font-normal text-[#8C8E90] pb-9 max-w-[400px]">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis nisi delectus adipisci doloremque fuga aperiam praesentium exercitationem neque doloribus.Lorem ipsum
-                                dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis
+                                Clean code nếu dịch ra thì có nghĩa là “mã nguồn sạch”, nhưng hiểu một cách đơn giản thì clean code bao gồm: cách tổ chức mã nguồn, cách triển khai mã nguồn sao cho khoa học, dễ hiểu và đem lại hiệu năng cao cho chương trình. Việc áp dụng clean code không
+                                khó, nhưng áp dụng làm sao cho đúng và chuẩn thì lại là một câu chuyện khác. Chính vì vậy mà việc nắm được, hiểu và biết cách áp dụng clean code sẽ khiến cho mã nguồn tốt hơn rất nhiều.
                             </p>
-                            <a class="text-[#416FF4] cursor-pointer border-b-[1px] border-[#416FF4] pb-[10px]">Learn More</a>
+                            <a target="_blank" href="https://tuhocict.com/dot-net-framework-va-ngon-ngu-c-sharp/" class="text-[#416FF4] cursor-pointer border-b-[1px] border-[#416FF4] pb-[10px]">Tìm hiểu thêm</a>
                         </div>
-                        <div class="book-content hidden ">
-                            <p class="text-[40px] font-bold pb-20">Tên cuốn sách đó 9</p>
-                            <p class="text-sm font-normal text-[#8C8E90] pb-9 max-w-[400px]">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis nisi delectus adipisci doloremque fuga aperiam praesentium exercitationem neque doloribus.Lorem ipsum
-                                dolor sit amet, consectetur adipisicing elit. Consequuntur quam repellat dolor laudantium veniam, unde suscipit quia ipsam enim officiis
-                            </p>
-                            <a class="text-[#416FF4] cursor-pointer border-b-[1px] border-[#416FF4] pb-[10px]">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- day la member -->
+            <div id="member" class="w-[60%] m-auto swiper mySwiper6">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="w-[95%] member-content flex felx-row justify-center items-center bg-[#101C3D] mt-[87px] mb-[115px] rounded-xl drop-shadow-none shadow-little">
+                            <div class="w-[65%] text-white pl-12 font-DMsans">
+                                <p class="text-xl pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, impedit. Neque, hic explicabo? Unde, sint ea iusto aliquid quisquam, voluptas voluptate est ad assumenda earum tempora repellat veritatis enim iste.</p>
+                                <p class="text-sm pb-2">Lê Thị Thu Hiền</p>
+                                <p class="text-sm text-[#8a95b4]">Chủ nhiệm câu lạc bộ tin học</p>
+                            </div>
+                            <div class="w-[35%]">
+                                <img class="w-[70%] m-auto my-12 rounded-[40px] overflow-hidden bg-[#3D99DF]" src="./img/member/LeThuHien.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="w-[95%] member-content flex felx-row justify-center items-center bg-[#101C3D] mt-[87px] mb-[115px] rounded-xl drop-shadow-none shadow-little">
+                            <div class="w-[65%] text-white pl-12 font-DMsans">
+                                <p class="text-xl pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, impedit. Neque, hic explicabo? Unde, sint ea iusto aliquid quisquam, voluptas voluptate est ad assumenda earum tempora repellat veritatis enim iste.</p>
+                                <p class="text-sm pb-2">Bùi Văn Tân</p>
+                                <p class="text-sm text-[#8a95b4]">Phụ trách câu lạc bộ cơ sở Nam Định</p>
+                            </div>
+                            <div class="w-[35%]">
+                                <img class="w-[70%] m-auto my-12 rounded-[40px] overflow-hidden bg-[#3D99DF]" src="./img/member/BuiVanTan.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="w-[95%] member-content flex felx-row justify-center items-center bg-[#101C3D] mt-[87px] mb-[115px] rounded-xl drop-shadow-none shadow-little">
+                            <div class="w-[65%] text-white pl-12 font-DMsans">
+                                <p class="text-xl pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, impedit. Neque, hic explicabo? Unde, sint ea iusto aliquid quisquam, voluptas voluptate est ad assumenda earum tempora repellat veritatis enim iste.</p>
+                                <p class="text-sm pb-2">Vũ Thành Đạt</p>
+                                <p class="text-sm text-[#8a95b4]">Phó chủ nhiệm câu lạc bộ tin học</p>
+                            </div>
+                            <div class="w-[35%]">
+                                <img class="w-[70%] m-auto my-12 rounded-[40px] overflow-hidden bg-[#3D99DF]" src="./img/member/VuThanhDat.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="w-[95%] member-content flex felx-row justify-center items-center bg-[#101C3D] mt-[87px] mb-[115px] rounded-xl drop-shadow-none shadow-little">
+                            <div class="w-[65%] text-white pl-12 font-DMsans">
+                                <p class="text-xl pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, impedit. Neque, hic explicabo? Unde, sint ea iusto aliquid quisquam, voluptas voluptate est ad assumenda earum tempora repellat veritatis enim iste.</p>
+                                <p class="text-sm pb-2">Trần Thị Thúy Nga</p>
+                                <p class="text-sm text-[#8a95b4]">Phó chủ nhiệm câu lạc bộ tin học</p>
+                            </div>
+                            <div class="w-[35%]">
+                                <img class="w-[70%] m-auto my-12 rounded-[40px] overflow-hidden bg-[#3D99DF]" src="./img/member/TranThiThuyNga.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -566,7 +581,7 @@
                             <label class="min-w-[110px]" for="email">Email</label>
                             <input class="text-[#9A9EA5] bg-transparent pb-1 outline-none focus:border-b-[3px] focus:border-b-[#d7dde7] border-y-0 border-t-0 border-b-2 border-b-[#9A9EA5] grow" id="email" type="email" placeholder="Nhập email">
                         </div>
-                        <button class="w-full text-base text-black py-2 mt-7 bg-white rounded-md" type="button">Gửi ngay</button>
+                        <button class="w-full text-base text-black py-2 mt-7 bg-white hover:bg-white/90 rounded-md" type="button">Gửi ngay</button>
                     </form>
                 </div>
             </div>
