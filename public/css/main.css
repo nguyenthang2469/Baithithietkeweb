@@ -1,0 +1,86 @@
+.text-header {
+    color: var(--text-header-color);
+}
+
+.text-heading {
+    color: var(--heading-color);
+}
+
+.bg-btn {
+    background-color: var(--bg-color-btn);
+}
+
+.bg-btn-hover {
+    background-color: var(--bg-color-btn-hover);
+}
+
+.shadow-box {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.shadow-box-around {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.shadow-btn {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide>img {
+    display: block;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 60px !important;
+}
+
+.slide-nav-active {
+    color: #416FF4;
+}
+
+.slide-show {
+    display: flex;
+}
+
+.slide-hidden {
+    display: none;
+}
+
+.mask-hidden {
+    transition: all 1s;
+}
+
+.border-left-rounded {
+    border-radius: 0px 12px 12px 0px;
+}
+
+.ml-0-important {
+    margin-left: 0px !important;
+}
+.book-content.active{
+    display:block;
+}
+.active{
+    transition: all 1s;
+}
+.font-DMsans{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.shadow-little{
+    box-shadow: 20px 20px #dddddd;
+}
+.show-card{
+    display:flex;
+}
