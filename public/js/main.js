@@ -41,6 +41,7 @@ var swiper3 = new Swiper(".mySwiper3", {
   autoplay: {
     delay: 1500,
     disableOnInteraction: false,
+    pauseOnMouseEnter:true,
   },
 });
 
@@ -149,7 +150,7 @@ cuocthi.addEventListener("click", function () {
   $('.slide-content-2').classList.add('slide-hidden');
 });
 $('.show-all').addEventListener("click", function () {
-  var nd = $('.show-all').innerHTML;
+  const nd = $('.show-all').innerHTML;
   if (nd === "Xem tất cả") {
     $('.show-all').innerHTML = "Ẩn bớt";
   }
@@ -158,4 +159,3 @@ $('.show-all').addEventListener("click", function () {
   }
   $('.mask-hidden').classList.toggle('h-[1200px]');
 });
-
