@@ -2,9 +2,9 @@
     --text-header-color: #575859;
     --heading-color: #242323;
     --bg-color-btn: #416FF4;
-    --bg-color-btn-hover: #2a5ef9;
 }
 
 html {
     font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
 }

@@ -69,6 +69,7 @@
 .ml-0-important {
     margin-left: 0px !important;
 }
-.book-content.active{
-    display:block;
+
+.book-content.active {
+    display: block;
 }
