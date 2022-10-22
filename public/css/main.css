@@ -60,15 +60,15 @@
 .achieve>.swiper-slide{
     background-position: center;
     background-size: cover;
-    width: 300px;
-    height: 400px;
+    width: 320px;
+    height: 470px;
 }
 
 .swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-    bottom: 60px !important;
+    bottom: 30px !important;
 }
 
 .slide-nav-active {
