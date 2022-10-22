@@ -4,10 +4,19 @@ var swiper = new Swiper(".mySwiper", {
     loop: true,
     autoplay: {
         delay: 1500,
-        disableOnInteraction: true
+        disableOnInteraction: false
     },
 });
 
+var swiper1 = new Swiper(".mySwiper1", {
+  grabCursor: true,
+    effect: "fade",
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+});
 var swiper2 = new Swiper(".mySwiper2", {
     effect: "coverflow",
     grabCursor: true,
@@ -93,6 +102,29 @@ var swiper6 = new Swiper(".mySwiper6", {
     },
 });
 
+var swiper7 = new Swiper(".mySwiper7", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    loop:true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 10,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+
+});
+
 const doanthanhnien = document.querySelector('.slide-nav-1');
 const hoctap = document.querySelector('.slide-nav-2');
 const cuocthi = document.querySelector('.slide-nav-3');
@@ -160,3 +192,13 @@ $('.show-all').addEventListener("click", function() {
     }
     $('.mask-hidden').classList.toggle('h-[1200px]');
 });
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-80px";
+  }
+  prevScrollpos = currentScrollPos;
+}

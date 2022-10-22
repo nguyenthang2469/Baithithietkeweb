@@ -6,6 +6,9 @@
     color: var(--heading-color);
 }
 
+#navbar{
+    transition: all 0.3s;
+}
 .bg-btn {
     background-color: var(--bg-color-btn);
 }
@@ -38,6 +41,27 @@
     width: 100%;
     height: 450px;
     object-fit: cover;
+}
+
+.slide-banner-text{
+    display: block;
+}
+.swiper-achieve{
+    width: 100%;
+    max-width: 950px;
+    border-radius:12px;
+    background-image: url('../img/achieve/background-dep-may-xanh-hong.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:30px!important;
+    padding-bottom:30px!important;
+}
+
+.achieve>.swiper-slide{
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
 }
 
 .swiper-horizontal>.swiper-pagination-bullets,
@@ -89,4 +113,8 @@
 
 .show-card {
     display: flex;
+}
+
+.h-350ipt{
+    height: 370px!important;
 }

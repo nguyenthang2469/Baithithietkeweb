@@ -19,7 +19,7 @@
     <div id="main">
         <header id="header" class="min-h-[750px] pt-3 bg-[#E4E9F5]">
             <!-- day la thanh navbar -->
-            <div class="fixed top-0 z-50 w-full bg-[#E4E9F5] drop-shadow-lg select-none">
+            <div id ="navbar"class="fixed top-0 z-50 w-full bg-[#E4E9F5] drop-shadow-lg select-none">
                 <div class=" grid grid-cols-12 items-center max-w-[1024px] xl:max-w-[1280px] mx-auto select-none">
                     <div class="col-start-1 col-end-3 text-xl font-bold">
                         <a href="#header" class="cursor-pointer">
@@ -71,16 +71,49 @@
                 </div>
             </div>
             <section id="banner" class="max-w-[1024px] xl:max-w-[1280px] mx-auto flex flex-row pt-44 pb-24">
-                <div class="w-[40%]">
-                    <p class="font-bold text-[43px]">
-                        Năng động hơn<br />Sáng tạo hơn<br /> Mới mẻ hơn
-                    </p>
-                    <p class="pt-5 pb-8 max-w-[80%]">Hãy cùng tham gia câu lạc bộ để nâng cao kiến thức, kỹ năng của bản thân. Ngoài ra bạn có thể mở rộng các mối quan hệ và có những kỷ niệm khó phai dưới mái trường.</p>
-                    <button class="p-4 rounded-[4px] text-white bg-btn hover:bg-[#2a5ef9]" type="button">
-                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScc8O9WctKJaMTbZht0vpHz7EEuN2tisk7ljEnTTNtNmmjgQA/viewform">Tham gia ngay</a>
-                    </button>
+                <!-- day la slide chu cua banner -->
+                <div class ="w-[40%]">
+                    <div class="swiper mySwiper1">
+                        <div class="swiper-wrapper pb-8">
+                            <div class="swiper-slide h-350ipt">
+                                <div class ="bg-[#E4E9F5] h-full">
+                                    <p class="font-bold text-[43px]">
+                                        Câu lạc bộ<br> ITC UNETI
+                                    </p>
+                                    <p class="pt-5 max-w-[80%]">"Là CLB trực thuộc trường Đại học Kinh tế - Kỹ thuật - Công nghiệp hoạt động nhằm mục đích hỗ trợ nhà trường trong công tác giáo dục định hướng cách tự học của học sinh, xây dựng ý thức tự giác. Từ đó góp phần rèn luyện nâng cao kỹ năng sống cho học sinh trường Đại học Kinh tế - Kỹ thuật - Công nghiệp"</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide h-350ipt">
+                                <div class ="bg-[#E4E9F5] h-full">
+                                    <p class="font-bold text-[43px]">
+                                        Câu lạc bộ<br> ITC UNETI
+                                    </p>
+                                    <p class="pt-5 max-w-[80%]">"CLB tin học trường Đại học Kinh tế - Kỹ thuật - Công nghiệp tạo điều kiện cho những học sinh có sở trường, năng khiếu, yêu thích tin học có cơ hội phát huy năng lực của mình. Củng cố, mở rộng kiến thức tin học cho học sinh, trang bị những kĩ năng cần thiết góp phần phát triển và hoàn thiện nhân cách học sinh.Tạo môi trường làm việc giao lưu, hợp tác, giúp học sinh học hỏi, giao lưu, ứng xử."</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide h-350ipt">
+                                <div class ="bg-[#E4E9F5] h-full">
+                                    <p class="font-bold text-[43px]">
+                                        Năng động hơn<br />Sáng tạo hơn<br /> Mới mẻ hơn
+                                    </p>
+                                    <p class="pt-5 max-w-[80%]">Hãy cùng tham gia câu lạc bộ để nâng cao kiến thức, kỹ năng của bản thân. Ngoài ra bạn có thể mở rộng các mối quan hệ và có những kỷ niệm khó phai dưới mái trường.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide h-350ipt">
+                                <div class ="bg-[#E4E9F5] h-full">
+                                    <p class="font-bold text-[43px]">
+                                        Nguyên tắc <br>hoạt động CLB
+                                    </p>
+                                    <p class="pt-5 max-w-[80%] text-sm">+ Chất lượng của các hoạt động được đặt lên hàng đầu.<br>+ Thu hút được đông đảo các thành viên tham gia.<br>+ Thúc đẩy được phong trào học tập và làm việc của các thành viên CLB.<br>+ Khuyến khích sáng tạo, năng động trong hoạt động CLB và học tập. <br>+ Không có ảnh hưởng xấu tới thuần phong mỹ tục, đạo đức, tư tưởng và lối sống của học sinh, không vi phạm pháp luật.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="p-4 rounded-[4px] text-white bg-btn hover:bg-[#2a5ef9]" type="button">
+                            <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScc8O9WctKJaMTbZht0vpHz7EEuN2tisk7ljEnTTNtNmmjgQA/viewform">Tham gia ngay</a>
+                        </button>
+                    </div>
                 </div>
-                <!-- day la slide -->
+                <!-- day la slide anh cua banner -->
                 <div class="w-[60%] swiper mySwiper rounded-md cursor-grab">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide flex flex-col">
@@ -443,13 +476,104 @@
                     </div>
                 </div>
             </div>
+            <!-- day la achieve -->
+            <div id="achieve" class ="bg-[#E4E9F5] pb-12">
+                <p class="text-center text-4xl font-bold pt-[75px] pb-16">
+                    Các thành tích nổi bật
+                </p>
+                <div class="swiper mySwiper7 swiper-achieve select-none">
+                    <div class="swiper-wrapper achieve">
+                        <div class="swiper-slide">
+                            <div class="bg-gray-100 rounded-xl overflow-hidden h-full ">
+                                <img class="w-full h-1/2" src="./img/achieve/giao-dien-tong-quan-tren-web-va-app-cua-phan-mem-quan-ly-nhan-su-coffeehr.jpg" alt="" />
+                                <div class="w-[80%] m-auto py-5">
+                                    <p class="text-xl font-semibold pb-7">Xây dựng mô hình quản lí nhân sự</p>
+                                    <div class="pb-2">
+                                        <p class="text-base text-[#268EAA]">Nghiên cứu khoa học</p>
+                                    </div>
+                                    <hr class="pb-4 border-[#268EAA]" />
+                                    <div class ="flex items-center">
+                                        <img class="w-12 h-12 inline-block " src="./img/achieve/facebook-cap-nhat-avatar-doi-voi-tai-khoan-khong-su-dung-anh-dai-dien-e4abd14d.jpg" alt="" />
+                                        <span class="text-sm font-bold pl-2">Phạm Quang huy, Lương Thị Huyền,Nguyễn Văn long</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-gray-100 rounded-xl overflow-hidden h-full ">
+                                <img class="w-full h-1/2" src="./img/achieve/ITC.png" alt="" />
+                                <div class="w-[80%] m-auto py-5">
+                                    <p class="text-xl font-semibold pb-7">Xây dựng ứng dụng ITC cho nền tảng di động</p>
+                                    <div class="pb-2">
+                                        <p class="text-base text-[#268EAA]">Nghiên cứu khoa học</p>
+                                    </div>
+                                    <hr class="pb-4 border-[#268EAA]" />
+                                    <div class ="flex items-center">
+                                        <img class="w-12 h-12 inline-block " src="./img/achieve/facebook-cap-nhat-avatar-doi-voi-tai-khoan-khong-su-dung-anh-dai-dien-e4abd14d.jpg" alt="" />
+                                        <span class="text-sm font-bold pl-2">Đàm Văn Anh, Lưu Thị Hường</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-gray-100 rounded-xl overflow-hidden h-full ">
+                                <img class="w-full h-1/2" src="./img/achieve/WC2.jpg" alt="" />
+                                <div class="w-[80%] m-auto py-5">
+                                    <p class="text-xl font-semibold pb-7">Xây dựng mô hình ứng dụng tìm nhà vệ sinh thông minh</p>
+                                    <div class="pb-2">
+                                        <p class="text-base text-[#268EAA]">Ý tưởng sáng tạo khởi nghiệp</p>
+                                    </div>
+                                    <hr class="pb-4 border-[#268EAA]" />
+                                    <div class ="flex items-center">
+                                        <img class="w-12 h-12 inline-block " src="./img/achieve/facebook-cap-nhat-avatar-doi-voi-tai-khoan-khong-su-dung-anh-dai-dien-e4abd14d.jpg" alt="" />
+                                        <span class="text-sm font-bold pl-2">Lê Thành Trung</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-gray-100 rounded-xl overflow-hidden h-full ">
+                                <img class="w-full h-1/2" src="./img/achieve/app-1526462263-2547-1526462274.jpg" alt="" />
+                                <div class="w-[80%] m-auto py-5">
+                                    <p class="text-xl font-semibold pb-7">Nghiên cứu phát triển phần mềm giám sát nông nghiệp bằng IOT</p>
+                                    <div class="pb-2">
+                                        <p class="text-base text-[#268EAA]">Ý tưởng sáng tạo khởi nghiệp</p>
+                                    </div>
+                                    <hr class="pb-4 border-[#268EAA]" />
+                                    <div class ="flex items-center">
+                                        <img class="w-12 h-12 inline-block " src="./img/achieve/facebook-cap-nhat-avatar-doi-voi-tai-khoan-khong-su-dung-anh-dai-dien-e4abd14d.jpg" alt="" />
+                                        <span class="text-sm font-bold pl-2">Trịnh Thị Huyền Diệu</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-gray-100 rounded-xl overflow-hidden h-full ">
+                                <img class="w-full h-1/2" src="./img/achieve/thuong-mai-dien-tu-799x400-1.webp" alt="" />
+                                <div class="w-[80%] m-auto py-5">
+                                    <p class="text-xl font-semibold pb-7">Nghiên cứu xây dựng website thương mại điện tử</p>
+                                    <div class="pb-2">
+                                        <p class="text-base text-[#268EAA]">Nghiên cứu khoa học</p>
+                                    </div>
+                                    <hr class="pb-4 border-[#268EAA]" />
+                                    <div class ="flex items-center">
+                                        <img class="w-12 h-12 inline-block " src="./img/achieve/facebook-cap-nhat-avatar-doi-voi-tai-khoan-khong-su-dung-anh-dai-dien-e4abd14d.jpg" alt="" />
+                                        <span class="text-sm font-bold pl-2">Đàm Văn Anh, Nguyễn Thiện Thắng, Lên Thành Trung</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
             <!-- day la member -->
-            <div id="member" class="w-[60%] m-auto swiper mySwiper6">
+            <div id="member" class=" max-w-4xl w-[60%] m-auto swiper mySwiper6 ">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="w-[95%] member-content flex felx-row justify-center items-center bg-[#101C3D] mt-[87px] mb-[115px] rounded-xl drop-shadow-none shadow-little">
                             <div class="w-[65%] text-white pl-12 font-DMsans">
-                                <p class="text-xl pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, impedit. Neque, hic explicabo? Unde, sint ea iusto aliquid quisquam, voluptas voluptate est ad assumenda earum tempora repellat veritatis enim iste.</p>
+                                <p class="text-xl pb-4"><span class ="font-bold text-[#3D99DF]">Tính cách: </span>Vui vẻ, hòa đồng, nhiệt tình trong công việc.<br><br></p>
                                 <p class="text-sm pb-2">Lê Thị Thu Hiền</p>
                                 <p class="text-sm text-[#8a95b4]">Chủ nhiệm câu lạc bộ tin học</p>
                             </div>
@@ -461,7 +585,7 @@
                     <div class="swiper-slide">
                         <div class="w-[95%] member-content flex felx-row justify-center items-center bg-[#101C3D] mt-[87px] mb-[115px] rounded-xl drop-shadow-none shadow-little">
                             <div class="w-[65%] text-white pl-12 font-DMsans">
-                                <p class="text-xl pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, impedit. Neque, hic explicabo? Unde, sint ea iusto aliquid quisquam, voluptas voluptate est ad assumenda earum tempora repellat veritatis enim iste.</p>
+                                <p class="text-xl pb-4"><span class ="font-bold text-[#3D99DF]">Tính cách: </span>Vui vẻ, hòa đồng, nhiệt tình trong công việc.<br><br>"Luôn luôn mơ và nhắm cao hơn khả năng của bản thân. Đừng bận tâm tới việc làm tốt hơn những người đương thời hay những người đi trước. Hãy cố để tốt hơn chính mình."</p>
                                 <p class="text-sm pb-2">Bùi Văn Tân</p>
                                 <p class="text-sm text-[#8a95b4]">Phụ trách câu lạc bộ cơ sở Nam Định</p>
                             </div>
@@ -473,7 +597,7 @@
                     <div class="swiper-slide">
                         <div class="w-[95%] member-content flex felx-row justify-center items-center bg-[#101C3D] mt-[87px] mb-[115px] rounded-xl drop-shadow-none shadow-little">
                             <div class="w-[65%] text-white pl-12 font-DMsans">
-                                <p class="text-xl pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, impedit. Neque, hic explicabo? Unde, sint ea iusto aliquid quisquam, voluptas voluptate est ad assumenda earum tempora repellat veritatis enim iste.</p>
+                                <p class="text-xl pb-4"><span class ="font-bold text-[#3D99DF]">Tính cách: </span>Vui vẻ, hòa đồng, nhiệt tình trong công việc.<br><br>"Khi bản thân có một tài năng cực kỳ giỏi, đừng làm nó miễn phí."</p>
                                 <p class="text-sm pb-2">Vũ Thành Đạt</p>
                                 <p class="text-sm text-[#8a95b4]">Phó chủ nhiệm câu lạc bộ tin học</p>
                             </div>
@@ -485,7 +609,7 @@
                     <div class="swiper-slide">
                         <div class="w-[95%] member-content flex felx-row justify-center items-center bg-[#101C3D] mt-[87px] mb-[115px] rounded-xl drop-shadow-none shadow-little">
                             <div class="w-[65%] text-white pl-12 font-DMsans">
-                                <p class="text-xl pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, impedit. Neque, hic explicabo? Unde, sint ea iusto aliquid quisquam, voluptas voluptate est ad assumenda earum tempora repellat veritatis enim iste.</p>
+                                <p class="text-xl pb-4"><span class ="font-bold text-[#3D99DF]">Tính cách: </span>Vui vẻ, hòa đồng, nhiệt tình trong công việc.<br><br>"Một bữa ăn cứu sống mạng người, một lời nói tốt đẹp thay đổi cả một tương lai, một hành động đúng dẫn đến hai chữ thành công."</p>
                                 <p class="text-sm pb-2">Trần Thị Thúy Nga</p>
                                 <p class="text-sm text-[#8a95b4]">Phó chủ nhiệm câu lạc bộ tin học</p>
                             </div>
@@ -505,7 +629,7 @@
                             <img class="inline-block w-20" src="./img/header/logo_ITC-removebg-preview 2.png" alt="Logo_ITC" />
                             <span class="text-[#0075FF]">IT</span><span class="text-white">-Club</span>
                         </a>
-                        <p class="text-sm text-justify text-[#8C8E90]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam veniam quas iure et. Tempora pariatur harum ea necessitatibus modi ab omnis in voluptates accusamus, qui odio eos cupiditate asperiores corrupti.</p>
+                        <p class="text-sm text-justify text-[#8C8E90]">Câu lạc bộ Tin học trường Đại Học Kinh tế - Kỹ thuật - Công Nghiệp là nơi để các thành viên cùng nhau nghiên cứu, sáng tạo và đưa ra phương pháp học tập, nghiên cứu, định hướng phát triển nghề nghiệp, mở ra các mối quan hệ hợp tác giữa các thành viên trong Câu lạc bộ.</p>
                     </div>
                     <img class="w-[120px] mx-auto" src="./img/footer/Shapes_footer.png" alt="image footer">
                 </div>

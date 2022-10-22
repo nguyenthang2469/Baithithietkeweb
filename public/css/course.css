@@ -1,0 +1,65 @@
+html,
+body {
+  position: relative;
+  /* background-image: url('../img/achieve/background-dep-may-xanh-hong.webp');
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-color:#E4E9F5;
+}
+.text-header {
+    color: var(--text-header-color);
+}
+
+.text-heading {
+    color: var(--heading-color);
+}
+
+#navbar{
+    transition: all 0.3s;
+}
+.bg-btn {
+    background-color: var(--bg-color-btn);
+}
+
+.bg-btn-hover {
+    background-color: var(--bg-color-btn-hover);
+}
+
+.shadow-box {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.shadow-box-around {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.shadow-btn {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+.swiper {
+width: 100%;
+height: 100%;
+}
+
+.swiper-slide{
+    cursor:grab;
+}
+.mySwiper .swiper-slide-thumb-active {
+    transform: translateY(-2%) !important;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+}
+.swiper-achieve{
+    width: 100%;
+    border-radius:0px 0px 12px 12px;
+    padding-top:30px!important;
+    padding-bottom:30px!important;
+    padding-left:20px!important;
+    padding-right:20px!important;
+}
+
+.achieve>.swiper-slide{
+    background-position: center;
+    background-size: cover;
+    width: 340px;
+    height: 500px;
+}
