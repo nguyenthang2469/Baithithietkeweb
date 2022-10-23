@@ -535,6 +535,10 @@ video {
   top: 100%;
 }
 
+.right-0 {
+  right: 0px;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -984,6 +988,22 @@ video {
 
 .max-w-6xl {
   max-width: 72rem;
+}
+
+.max-w-\[1280px\] {
+  max-width: 1280px;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
+}
+
+.max-w-\[1440px\] {
+  max-width: 1440px;
+}
+
+.max-w-\[90\%\] {
+  max-width: 90%;
 }
 
 .grow {
